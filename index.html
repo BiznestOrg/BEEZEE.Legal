@@ -32,80 +32,174 @@
         .subtitle {
             color: #6b7280;
             font-size: 1rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
         }
-        .doc-section {
+        .lang-selector {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+        .lang-selector label {
+            font-size: 0.85rem;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        .lang-selector select {
+            appearance: none;
+            -webkit-appearance: none;
+            background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M2 4l4 4 4-4'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 0.5rem 2rem 0.5rem 0.75rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #1a1a2e;
+            cursor: pointer;
+            transition: border-color 0.15s;
+        }
+        .lang-selector select:hover {
+            border-color: #d1d5db;
+        }
+        .lang-selector select:focus {
+            outline: none;
+            border-color: #1a1a2e;
+        }
+        .doc-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             background: #fff;
             border: 1px solid #e5e7eb;
             border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            text-align: left;
-        }
-        .doc-section h2 {
-            font-size: 1.1rem;
+            padding: 1.25rem 1.5rem;
             margin-bottom: 1rem;
-            color: #1a1a2e;
-        }
-        .lang-links {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-        }
-        .lang-links a {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            padding: 0.6rem 1.2rem;
-            background: #f3f4f6;
-            border: 1px solid #e5e7eb;
-            border-radius: 8px;
-            color: #1a1a2e;
             text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: background 0.15s, border-color 0.15s;
+            color: #1a1a2e;
+            transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+            cursor: pointer;
         }
-        .lang-links a:hover {
-            background: #e5e7eb;
+        .doc-card:hover {
+            background: #f3f4f6;
             border-color: #d1d5db;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
         }
-        .coming-soon {
+        .doc-card:active {
+            background: #e5e7eb;
+        }
+        .doc-card-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+        .doc-card-arrow {
             color: #9ca3af;
-            font-size: 0.9rem;
-            font-style: italic;
+            font-size: 1.2rem;
+            transition: transform 0.15s;
+        }
+        .doc-card:hover .doc-card-arrow {
+            transform: translateX(3px);
+            color: #6b7280;
         }
         footer {
             margin-top: 2rem;
             color: #9ca3af;
             font-size: 0.8rem;
         }
+        @media (max-width: 640px) {
+            body { padding: 1.5rem 1rem; }
+            .container { max-width: 100%; }
+            .logo { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="logo">BEEZEE</div>
-        <p class="subtitle">EasyManagement Platform — Legal Documents</p>
+        <p class="subtitle" data-i18n="subtitle">EasyManagement Platform — Legal Documents</p>
 
-        <div class="doc-section">
-            <h2>Privacy Policy</h2>
-            <div class="lang-links">
-                <a href="privacy-policy/en.html">🇬🇧 English</a>
-                <a href="privacy-policy/pl.html">🇵🇱 Polski</a>
-                <a href="privacy-policy/uk.html">🇺🇦 Українська</a>
-            </div>
+        <div class="lang-selector">
+            <label data-i18n="langLabel">Language:</label>
+            <select id="langSelect" aria-label="Select language">
+                <option value="en">🇬🇧 English</option>
+                <option value="pl">🇵🇱 Polski</option>
+                <option value="uk">🇺🇦 Українська</option>
+            </select>
         </div>
 
-        <div class="doc-section">
-            <h2>Terms of Use</h2>
-            <div class="lang-links">
-                <a href="terms-of-use/en.html">🇬🇧 English</a>
-                <a href="terms-of-use/pl.html">🇵🇱 Polski</a>
-                <a href="terms-of-use/uk.html">🇺🇦 Українська</a>
-            </div>
-        </div>
+        <a class="doc-card" id="privacyLink" href="privacy-policy/en.html">
+            <span class="doc-card-title" data-i18n="privacyPolicy">Privacy Policy</span>
+            <span class="doc-card-arrow">→</span>
+        </a>
+
+        <a class="doc-card" id="termsLink" href="terms-of-use/en.html">
+            <span class="doc-card-title" data-i18n="termsOfUse">Terms of Use</span>
+            <span class="doc-card-arrow">→</span>
+        </a>
     </div>
 
-    <footer>© 2026 BEEZEE</footer>
+    <footer data-i18n="footer">© 2026 BEEZEE</footer>
+
+    <script>
+        var translations = {
+            en: {
+                subtitle: "EasyManagement Platform — Legal Documents",
+                langLabel: "Language:",
+                privacyPolicy: "Privacy Policy",
+                termsOfUse: "Terms of Use",
+                footer: "© 2026 BEEZEE"
+            },
+            pl: {
+                subtitle: "Platforma EasyManagement — Dokumenty prawne",
+                langLabel: "Język:",
+                privacyPolicy: "Polityka prywatności",
+                termsOfUse: "Warunki użytkowania",
+                footer: "© 2026 BEEZEE"
+            },
+            uk: {
+                subtitle: "Платформа EasyManagement — Юридичні документи",
+                langLabel: "Мова:",
+                privacyPolicy: "Політика конфіденційності",
+                termsOfUse: "Умови використання",
+                footer: "© 2026 BEEZEE"
+            }
+        };
+
+        var langSelect = document.getElementById("langSelect");
+        var privacyLink = document.getElementById("privacyLink");
+        var termsLink = document.getElementById("termsLink");
+
+        function setLanguage(lang) {
+            var t = translations[lang];
+            if (!t) return;
+
+            document.documentElement.lang = lang;
+            document.querySelectorAll("[data-i18n]").forEach(function(el) {
+                var key = el.getAttribute("data-i18n");
+                if (t[key]) el.textContent = t[key];
+            });
+
+            privacyLink.href = "privacy-policy/" + lang + ".html";
+            termsLink.href = "terms-of-use/" + lang + ".html";
+
+            langSelect.value = lang;
+
+            try { localStorage.setItem("beezee-legal-lang", lang); } catch(e) {}
+        }
+
+        langSelect.addEventListener("change", function() {
+            setLanguage(this.value);
+        });
+
+        // Restore saved language or detect from browser
+        var saved = null;
+        try { saved = localStorage.getItem("beezee-legal-lang"); } catch(e) {}
+        if (!saved) {
+            var browserLang = (navigator.language || "").slice(0, 2).toLowerCase();
+            if (browserLang === "pl" || browserLang === "uk") saved = browserLang;
+            else saved = "en";
+        }
+        setLanguage(saved);
+    </script>
 </body>
 </html>
