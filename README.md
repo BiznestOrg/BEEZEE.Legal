@@ -7,7 +7,7 @@ Legal documents for the **BEEZEE** (EasyManagement) platform.
 | Document | EN | PL | UK |
 |----------|----|----|-----|
 | Privacy Policy | [English](privacy-policy/en.html) | [Polski](privacy-policy/pl.html) | [Українська](privacy-policy/uk.html) |
-| Terms of Use | _Coming soon_ | _Coming soon_ | _Coming soon_ |
+| Terms of Use | [English](terms-of-use/en.html) | [Polski](terms-of-use/pl.html) | [Українська](terms-of-use/uk.html) |
 
 ## Hosting
 
