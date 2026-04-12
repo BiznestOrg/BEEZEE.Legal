@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulamin — BEEZEE</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f8f9fa;
+            color: #1a1a2e;
+            line-height: 1.7;
+            padding: 0;
+        }
+        .top-bar {
+            background: #fff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .top-bar .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #1a1a2e;
+            text-decoration: none;
+        }
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .lang-switcher a {
+            padding: 0.3rem 0.7rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #4b5563;
+            text-decoration: none;
+            border: 1px solid transparent;
+            transition: all 0.15s;
+        }
+        .lang-switcher a:hover {
+            background: #f3f4f6;
+            border-color: #e5e7eb;
+        }
+        .lang-switcher a.active {
+            background: #1a1a2e;
+            color: #fff;
+            border-color: #1a1a2e;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+            color: #1a1a2e;
+        }
+        h2 {
+            font-size: 1.3rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #e5e7eb;
+            color: #1a1a2e;
+        }
+        h3 {
+            font-size: 1.05rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.6rem;
+            color: #1a1a2e;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        strong {
+            color: #1a1a2e;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 2rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem;
+            font-size: 0.92rem;
+        }
+        thead th {
+            background: #f3f4f6;
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 600;
+            border-bottom: 2px solid #d1d5db;
+            color: #1a1a2e;
+        }
+        tbody td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e5e7eb;
+            vertical-align: top;
+            color: #374151;
+        }
+        tbody tr:hover {
+            background: #f9fafb;
+        }
+        ul, ol {
+            margin: 0.5rem 0 1rem 1.5rem;
+            color: #374151;
+        }
+        li {
+            margin-bottom: 0.4rem;
+        }
+        em {
+            color: #6b7280;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.8rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        @media (max-width: 640px) {
+            .content { padding: 1.5rem 1rem 3rem; }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.15rem; }
+            table { font-size: 0.82rem; }
+            thead th, tbody td { padding: 0.5rem 0.6rem; }
+            .top-bar { padding: 0.6rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-bar">
+        <a href="../index.html" class="logo">BEEZEE</a>
+        <div class="lang-switcher">
+            <a href="en.html">EN</a>
+            <a href="pl.html" class="active">PL</a>
+            <a href="uk.html">UK</a>
+        </div>
+    </nav>
+    <div class="content">
+        <h1>Regulamin Korzystania z Usługi</h1>
+<p><strong>BEEZEE — Platforma EasyManagement</strong></p>
+<p><strong>Ostatnia aktualizacja:</strong> Kwiecień 2026</p>
+
+<p>Niniejszy Regulamin Korzystania z Usługi („Regulamin") reguluje relację pomiędzy Tobą
+(„Klient", „Manager" lub „Ty") a BiznestOrg („my", „nas" lub „Dostawca"), operatorem aplikacji
+mobilnej i platformy BEEZEE („Usługa").</p>
+
+<p>Tworząc konto lub korzystając z Usługi, akceptujesz niniejszy Regulamin w całości. Jeśli nie
+zgadzasz się z Regulaminem, nie możesz korzystać z Usługi.</p>
+
+<hr />
+
+<h2>1. Opis Usługi</h2>
+
+<p>BEEZEE to platforma do zarządzania personelem, która pomaga firmom organizować codzienne
+operacje. Usługa zapewnia:</p>
+
+<ul>
+    <li><strong>Zarządzanie zadaniami</strong> — tworzenie, przydzielanie i śledzenie zadań dla pracowników</li>
+    <li><strong>Śledzenie zmian</strong> — rejestrowanie sesji pracy pracowników z czasem rozpoczęcia i zakończenia</li>
+    <li><strong>Zarządzanie przerwami</strong> — śledzenie przerw podczas aktywnych zmian</li>
+    <li><strong>Planowanie zmian</strong> — planowanie i publikowanie harmonogramów pracowników z wyprzedzeniem</li>
+    <li><strong>Powiadomienia</strong> — informowanie pracowników o przydzielonych zadaniach, zmianach w harmonogramie i zdarzeniach operacyjnych</li>
+    <li><strong>Szablony zadań</strong> — szablony wielokrotnego użytku z opcjonalnym harmonogramem cyklicznym (dziennym lub tygodniowym)</li>
+    <li><strong>Dokumentacja fotograficzna</strong> — przesyłanie i zarządzanie zdjęciami jako dowodami wykonania zadań</li>
+    <li><strong>Zamówienia magazynowe</strong> — pracownicy mogą zgłaszać zapotrzebowanie na produkty z priorytetem i zdjęciami</li>
+    <li><strong>Statystyki</strong> — managerowie mogą przeglądać podsumowania operacyjne i analizy</li>
+</ul>
+
+<p>Usługa jest dostępna na iOS i Android za pośrednictwem aplikacji mobilnej BEEZEE.</p>
+
+<hr />
+
+<h2>2. Konto i Dostęp</h2>
+
+<h3>2.1 Rejestracja</h3>
+<p>Manager rejestruje się i tworzy konto firmowe. Manager jest głównym posiadaczem konta dla
+swojej firmy.</p>
+
+<h3>2.2 Konta Pracowników</h3>
+<p>Manager tworzy konta dla swoich pracowników. Pracownicy nie rejestrują się samodzielnie — są
+zapraszani przez Managera i automatycznie przypisywani do firmy Managera.</p>
+
+<h3>2.3 Ograniczenie Wiekowe</h3>
+<p>Usługa jest przeznaczona do użytku w kontekście profesjonalnym. Wszyscy użytkownicy muszą mieć
+ukończone 18 lat.</p>
+
+<h3>2.4 Bezpieczeństwo Konta</h3>
+<p>Użytkownik jest odpowiedzialny za zachowanie poufności danych logowania do swojego konta.
+W przypadku podejrzenia nieautoryzowanego dostępu do konta należy niezwłocznie nas powiadomić.
+Nie ponosimy odpowiedzialności za straty wynikające z nieautoryzowanego użycia danych
+logowania.</p>
+
+<h3>2.5 Prawidłowość Danych</h3>
+<p>Użytkownik zobowiązany jest do podania prawidłowych i kompletnych informacji podczas tworzenia
+kont. Manager jest odpowiedzialny za prawidłowość kont pracowników, które tworzy.</p>
+
+<hr />
+
+<h2>3. Dopuszczalne Użytkowanie</h2>
+
+<h3>3.1 Zgodność z Prawem</h3>
+<p>Manager musi przestrzegać wszystkich obowiązujących przepisów prawa lokalnego, krajowego i
+unijnego dotyczących pracy przy korzystaniu z funkcji monitorowania i śledzenia Usługi, w tym
+między innymi przepisów regulujących:</p>
+<ul>
+    <li>Czas pracy i okresy odpoczynku</li>
+    <li>Nadzór i monitorowanie pracowników</li>
+    <li>Ochronę danych i prywatność</li>
+</ul>
+
+<h3>3.2 Informowanie Pracowników</h3>
+<p>Manager jest odpowiedzialny za informowanie swoich pracowników o monitorowaniu w miejscu pracy
+prowadzonym za pośrednictwem Usługi, zgodnie z obowiązującymi przepisami prawa pracy i ochrony
+danych. Obejmuje to informowanie pracowników o tym, jakie dane są zbierane, dlaczego i w jaki
+sposób są wykorzystywane.</p>
+
+<h3>3.3 Uczciwe Korzystanie</h3>
+<p>Manager nie może wykorzystywać Usługi do:</p>
+<ul>
+    <li>Dyskryminowania pracowników ze względu na cechy chronione</li>
+    <li>Niesprawiedliwego karania pracowników na podstawie danych ze śledzenia wyrwanych z kontekstu</li>
+    <li>Obchodzenia przepisów prawa pracy lub zobowiązań umownych</li>
+</ul>
+
+<h3>3.4 Działania Zabronione</h3>
+<p>Wszystkim użytkownikom zabrania się:</p>
+<ul>
+    <li>Udostępniania danych logowania osobom nieuprawnionym</li>
+    <li>Prób uzyskania dostępu do kont lub danych należących do innych firm</li>
+    <li>Automatycznego pobierania, indeksowania lub ekstrakcji danych z Usługi</li>
+    <li>Inżynierii wstecznej, dekompilacji lub dezasemblacji jakiejkolwiek części Usługi</li>
+    <li>Przesyłania złośliwego oprogramowania, szkodliwych treści lub materiałów niezgodnych z prawem</li>
+    <li>Korzystania z Usługi w jakimkolwiek celu innym niż legalne zarządzanie personelem</li>
+</ul>
+
+<h3>3.5 Egzekwowanie</h3>
+<p>Zastrzegamy sobie prawo do zawieszenia lub zamknięcia kont naruszających niniejszy Regulamin,
+z uprzednim powiadomieniem lub bez niego, w zależności od wagi naruszenia.</p>
+
+<hr />
+
+<h2>4. Własność Danych</h2>
+
+<h3>4.1 Dane Firmowe</h3>
+<p>Wszystkie dane operacyjne firmy — w tym zadania, zmiany, harmonogramy, szablony, zamówienia
+magazynowe i powiązane treści — należą do firmy Klienta. Nie rościmy sobie prawa własności do
+danych firmowych Klienta.</p>
+
+<h3>4.2 Brak Monetyzacji Danych</h3>
+<p>Nie sprzedajemy, nie udostępniamy, nie wynajmujemy ani nie wykorzystujemy danych firmowych
+Klienta do własnych celów komercyjnych, reklamowych, analitycznych ani do jakichkolwiek celów
+wykraczających poza świadczenie Usługi.</p>
+
+<h3>4.3 Dane po Rozwiązaniu Umowy</h3>
+<p>Po rozwiązaniu konta dane będą przechowywane przez 90 dni, aby umożliwić eksport danych lub
+ponowną aktywację konta. Po upływie tego okresu wszystkie dane zostaną trwale i nieodwracalnie
+usunięte z naszych systemów, w tym z kopii zapasowych, w ciągu 30 dni.</p>
+
+<h3>4.4 Eksport Danych</h3>
+<p>W okresie przechowywania po rozwiązaniu umowy Klient może zażądać eksportu swoich danych w
+formacie nadającym się do odczytu maszynowego. W tym celu prosimy o kontakt pod adresem
+wskazanym w Sekcji 10.</p>
+
+<hr />
+
+<h2>5. Umowa Powierzenia Przetwarzania Danych (DPA)</h2>
+
+<p>Niniejsza sekcja stanowi Umowę Powierzenia Przetwarzania Danych pomiędzy Klientem
+(administratorem danych) a BiznestOrg (podmiotem przetwarzającym) zgodnie z art. 28
+Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO).</p>
+
+<h3>5.1 Role i Definicje</h3>
+<ul>
+    <li><strong>Administrator danych:</strong> Klient (Manager), który określa cele i sposoby przetwarzania danych osobowych swoich pracowników za pośrednictwem Usługi.</li>
+    <li><strong>Podmiot przetwarzający:</strong> BiznestOrg, który przetwarza dane osobowe w imieniu Administratora w celu świadczenia Usługi.</li>
+    <li><strong>Osoby, których dane dotyczą:</strong> Pracownicy firmy Administratora, których dane osobowe są przetwarzane za pośrednictwem Usługi.</li>
+</ul>
+
+<h3>5.2 Przedmiot i Czas Trwania</h3>
+<p>Podmiot przetwarzający przetwarza dane osobowe w imieniu Administratora w celu świadczenia
+platformy zarządzania personelem BEEZEE. Przetwarzanie rozpoczyna się w momencie utworzenia konta
+przez Administratora i trwa przez cały okres relacji z Usługą, powiększony o okres przechowywania
+określony w Sekcji 4.3.</p>
+
+<h3>5.3 Charakter i Cel Przetwarzania</h3>
+<p>Podmiot przetwarzający przetwarza dane osobowe w celu:</p>
+<ul>
+    <li>Przechowywania i wyświetlania harmonogramów pracy pracowników oraz danych zmianowych</li>
+    <li>Śledzenia przydzielania, postępów i realizacji zadań</li>
+    <li>Rejestrowania czasów rozpoczęcia i zakończenia zmian, trwania przerw oraz obliczeń czasu pracy</li>
+    <li>Zarządzania powiadomieniami dla pracowników dotyczącymi zadań i zdarzeń operacyjnych</li>
+    <li>Przechowywania i wyświetlania zdjęć przesłanych jako dowody wykonania zadań lub dokumentacja zamówień magazynowych</li>
+    <li>Generowania i wyświetlania statystyk operacyjnych i raportów dla Managera</li>
+    <li>Uwierzytelniania użytkowników i utrzymywania bezpiecznych sesji</li>
+</ul>
+
+<h3>5.4 Rodzaje Przetwarzanych Danych Osobowych</h3>
+<table>
+<thead>
+<tr><th>Kategoria</th><th>Przykłady</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Dane identyfikacyjne</strong></td><td>Imię, nazwisko, adres e-mail</td></tr>
+<tr><td><strong>Dane uwierzytelniające</strong></td><td>Hash hasła, tokeny odświeżania, tokeny urządzeń</td></tr>
+<tr><td><strong>Dane dotyczące zatrudnienia</strong></td><td>Przypisanie do firmy, przydzielona rola (Manager / Pracownik)</td></tr>
+<tr><td><strong>Dane dotyczące aktywności zawodowej</strong></td><td>Czas rozpoczęcia/zakończenia zmiany, czas rozpoczęcia/zakończenia przerwy, obliczenia czasu pracy</td></tr>
+<tr><td><strong>Dane dotyczące zadań</strong></td><td>Przydzielenia zadań, znaczniki czasu realizacji, notatki do zadań, komentarze do zadań</td></tr>
+<tr><td><strong>Dane harmonogramu</strong></td><td>Planowane zmiany (data, czas rozpoczęcia, czas zakończenia, notatki)</td></tr>
+<tr><td><strong>Zdjęcia</strong></td><td>Zdjęcia stanowiące dowód wykonania zadania, zdjęcia zamówień magazynowych</td></tr>
+<tr><td><strong>Dane komunikacyjne</strong></td><td>Wiadomości powiadomień, status odczytania powiadomień</td></tr>
+<tr><td><strong>Dane preferencji</strong></td><td>Ustawienie preferowanego języka</td></tr>
+<tr><td><strong>Dane magazynowe</strong></td><td>Opisy zamówień magazynowych, nazwy produktów, poziomy priorytetów</td></tr>
+</tbody>
+</table>
+
+<h3>5.5 Kategorie Osób, Których Dane Dotyczą</h3>
+<ul>
+    <li><strong>Managerowie</strong> — właściciele firm lub osoby upoważnione, które administrują platformą dla swojej firmy</li>
+    <li><strong>Pracownicy</strong> — osoby zarejestrowane przez Managera do korzystania z platformy w ramach firmy Managera</li>
+</ul>
+
+<h3>5.6 Obowiązki Podmiotu Przetwarzającego</h3>
+<p>BiznestOrg, jako podmiot przetwarzający, zobowiązuje się do:</p>
+<ol>
+    <li><strong>Przetwarzania wyłącznie na podstawie instrukcji Administratora.</strong> Przetwarzamy dane osobowe wyłącznie na podstawie udokumentowanych instrukcji Administratora, chyba że wymaga tego prawo UE lub prawo państwa członkowskiego — w takim przypadku poinformujemy Administratora o tym wymóg prawnym przed przetwarzaniem, chyba że prawo zabrania takiego powiadomienia.</li>
+    <li><strong>Poufność.</strong> Zapewniamy, że wszystkie osoby upoważnione do przetwarzania danych osobowych są związane umownymi lub ustawowymi zobowiązaniami do zachowania poufności.</li>
+    <li><strong>Środki bezpieczeństwa.</strong> Wdrażamy odpowiednie środki techniczne i organizacyjne w celu zapewnienia poziomu bezpieczeństwa odpowiedniego do ryzyka, w tym:
+        <ul>
+            <li>Szyfrowanie danych w tranzycie (TLS 1.2+) i w spoczynku (Azure TDE, SSE)</li>
+            <li>Hashowanie haseł przy użyciu PBKDF2-SHA256</li>
+            <li>Kontrola dostępu oparta na rolach na poziomie aplikacji</li>
+            <li>Izolacja danych wielodostępnych — dane każdej firmy są logicznie oddzielone identyfikatorem firmy</li>
+            <li>Zarządzanie kluczami tajnymi za pośrednictwem Azure Key Vault (brak kluczy w kodzie źródłowym)</li>
+            <li>Ścieżki audytu — każdy rekord śledzi znaczniki czasu i autorów tworzenia i modyfikacji</li>
+            <li>Automatyczne kończenie sesji i unieważnianie tokenów przy wylogowaniu</li>
+        </ul>
+    </li>
+    <li><strong>Angażowanie podwykonawców przetwarzania.</strong> Nie angażujemy innego podmiotu przetwarzającego bez uprzedniej pisemnej zgody Administratora. Lista aktualnie zatwierdzonych podwykonawców przetwarzania znajduje się w Sekcji 5.7. Poinformujemy Administratora o wszelkich planowanych zmianach dotyczących podwykonawców przetwarzania, dając Administratorowi możliwość wniesienia sprzeciwu.</li>
+    <li><strong>Pomoc w zakresie praw osób, których dane dotyczą.</strong> Pomagamy Administratorowi w odpowiadaniu na żądania osób, których dane dotyczą, w zakresie wykonywania ich praw wynikających z RODO (dostęp, sprostowanie, usunięcie, ograniczenie przetwarzania, przenoszenie, sprzeciw), zapewniając odpowiednie środki techniczne i organizacyjne.</li>
+    <li><strong>Powiadamianie o naruszeniach.</strong> Powiadamiamy Administratora bez zbędnej zwłoki po uzyskaniu informacji o naruszeniu ochrony danych osobowych. Powiadomienie będzie zawierało charakter naruszenia, kategorie i przybliżoną liczbę osób, których dane dotyczą, prawdopodobne konsekwencje oraz środki podjęte lub zaproponowane w celu zaradzenia naruszeniu.</li>
+    <li><strong>Usunięcie lub zwrot danych.</strong> Według wyboru Administratora, usuwamy lub zwracamy Administratorowi wszystkie dane osobowe po zakończeniu relacji usługowej i usuwamy istniejące kopie, chyba że prawo UE lub prawo państwa członkowskiego wymaga przechowywania danych. Terminy przechowywania określa Sekcja 4.3.</li>
+    <li><strong>Audyt i kontrole.</strong> Udostępniamy Administratorowi wszystkie informacje niezbędne do wykazania zgodności z obowiązkami wynikającymi z art. 28 RODO oraz umożliwiamy i wspieramy audyty i kontrole prowadzone przez Administratora lub audytora wyznaczonego przez Administratora.</li>
+</ol>
+
+<h3>5.7 Zatwierdzeni Podwykonawcy Przetwarzania</h3>
+<p>Administrator niniejszym zatwierdza korzystanie z następujących podwykonawców przetwarzania:</p>
+<table>
+<thead>
+<tr><th>Podwykonawca</th><th>Usługa</th><th>Przetwarzane dane</th><th>Lokalizacja</th><th>Zabezpieczenia</th></tr>
+</thead>
+<tbody>
+<tr>
+    <td><strong>Microsoft Azure</strong></td>
+    <td>Hosting w chmurze (SQL Database, Blob Storage, Container Apps, Functions, Key Vault)</td>
+    <td>Wszystkie dane platformy</td>
+    <td>Region UE</td>
+    <td>Microsoft Products and Services DPA; Standardowe Klauzule Umowne zatwierdzone przez UE</td>
+</tr>
+<tr>
+    <td><strong>Apple APNs</strong></td>
+    <td>Powiadomienia push na urządzenia iOS</td>
+    <td>Token urządzenia, tytuł i treść powiadomienia</td>
+    <td>Stany Zjednoczone</td>
+    <td>Apple Data Processing Agreement; EU–US Data Privacy Framework</td>
+</tr>
+<tr>
+    <td><strong>Google FCM</strong></td>
+    <td>Powiadomienia push na urządzenia Android</td>
+    <td>Token urządzenia, tytuł i treść powiadomienia</td>
+    <td>Stany Zjednoczone</td>
+    <td>Google Cloud Data Processing Amendment; EU–US Data Privacy Framework; Standardowe Klauzule Umowne</td>
+</tr>
+</tbody>
+</table>
+
+<h3>5.8 Międzynarodowe Transfery Danych</h3>
+<p>Podstawowe dane platformy (bazy danych, przechowywanie plików, usługi aplikacyjne) są hostowane
+w regionie UE Azure. Żadne podstawowe dane nie są przekazywane poza UE/EOG.</p>
+<p>Dostarczanie powiadomień push wymaga przekazania ograniczonych danych (tokeny urządzeń i treści
+powiadomień) do Apple (Stany Zjednoczone) i Google (Stany Zjednoczone). Transfery te są chronione
+przez:</p>
+<ul>
+    <li>Certyfikaty EU–US Data Privacy Framework posiadane przez Apple i Google</li>
+    <li>Standardowe Klauzule Umowne włączone do odpowiednich umów powierzenia przetwarzania danych</li>
+</ul>
+<p>Treści powiadomień zawierają jedynie tytuł i tekst wiadomości. Nie zawierają wrażliwych danych
+osobowych.</p>
+
+<h3>5.9 Ocena Skutków dla Ochrony Danych</h3>
+<p>W przypadku gdy rodzaj przetwarzania może powodować wysokie ryzyko naruszenia praw i wolności osób,
+których dane dotyczą, Podmiot przetwarzający będzie pomagał Administratorowi w przeprowadzeniu Oceny
+Skutków dla Ochrony Danych (DPIA) zgodnie z art. 35 RODO.</p>
+
+<hr />
+
+<h2>6. Dostępność Usługi</h2>
+
+<h3>6.1 Dostępność</h3>
+<p>Dokładamy wszelkich starań, aby zapewnić wysoką dostępność Usługi, ale nie gwarantujemy
+nieprzerwanego dostępu. Usługa jest świadczona na zasadzie najlepszych starań.</p>
+
+<h3>6.2 Konserwacja</h3>
+<p>Możemy przeprowadzać planowaną konserwację, która tymczasowo wpływa na dostępność Usługi.
+W miarę możliwości planujemy konserwację w godzinach niskiego obciążenia i informujemy
+użytkowników z wyprzedzeniem.</p>
+
+<h3>6.3 Brak Odpowiedzialności za Przestoje</h3>
+<p>Nie ponosimy odpowiedzialności za jakiekolwiek straty, szkody lub niedogodności spowodowane
+tymczasową niedostępnością Usługi z powodu konserwacji, problemów technicznych lub okoliczności
+pozostających poza naszą kontrolą.</p>
+
+<hr />
+
+<h2>7. Własność Intelektualna</h2>
+
+<h3>7.1 Własność Platformy</h3>
+<p>Aplikacja BEEZEE, w tym jej projekt, kod źródłowy, architektura, dokumentacja, znaki towarowe
+i branding, jest własnością intelektualną BiznestOrg. Niniejszy Regulamin nie przenosi żadnych
+praw własności intelektualnej na użytkownika.</p>
+
+<h3>7.2 Własność Danych Firmowych</h3>
+<p>Jak określono w Sekcji 4, wszystkie dane operacyjne firmy utworzone za pośrednictwem Usługi
+należą do Klienta.</p>
+
+<h3>7.3 Treści Generowane przez Użytkownika</h3>
+<p>Przesyłając zdjęcia lub inne treści do Usługi, użytkownik udziela nam niewyłącznej,
+nieprzenoszalnej licencji na przechowywanie, przetwarzanie i wyświetlanie tych treści wyłącznie
+w ramach Usługi w celu jej świadczenia. Licencja ta wygasa z chwilą usunięcia treści lub
+rozwiązania konta (z zastrzeżeniem okresu przechowywania określonego w Sekcji 4.3).</p>
+
+<h3>7.4 Opinie</h3>
+<p>Wszelkie opinie, sugestie lub pomysły dotyczące Usługi mogą być przez nas wykorzystywane bez
+ograniczeń i wynagrodzenia w celu ulepszenia Usługi.</p>
+
+<hr />
+
+<h2>8. Ograniczenie Odpowiedzialności</h2>
+
+<h3>8.1 Górna Granica Odpowiedzialności</h3>
+<p>W maksymalnym zakresie dozwolonym przez obowiązujące prawo, nasza całkowita łączna
+odpowiedzialność za wszelkie roszczenia wynikające z niniejszego Regulaminu lub Usługi jest
+ograniczona do łącznej kwoty opłat uiszczonych przez Klienta w okresie 12 miesięcy
+poprzedzających roszczenie. Jeżeli Usługa jest świadczona bezpłatnie, nasza całkowita
+odpowiedzialność jest ograniczona do 100 EUR.</p>
+
+<h3>8.2 Wyłączenie Szkód Pośrednich</h3>
+<p>W maksymalnym zakresie dozwolonym przez obowiązujące prawo, nie ponosimy odpowiedzialności za
+jakiekolwiek szkody pośrednie, uboczne, specjalne, następcze lub karne, w tym między innymi
+za:</p>
+<ul>
+    <li>Utratę zysków lub przychodów</li>
+    <li>Utratę danych (z wyjątkiem zobowiązań wynikających z DPA w Sekcji 5)</li>
+    <li>Utratę możliwości biznesowych</li>
+    <li>Przerwy w działalności</li>
+</ul>
+
+<h3>8.3 Siła Wyższa</h3>
+<p>Żadna ze stron nie ponosi odpowiedzialności za niewykonanie lub opóźnienie w wykonaniu swoich
+zobowiązań z powodu okoliczności pozostających poza jej kontrolą, w tym między innymi klęsk
+żywiołowych, działań rządowych, pandemii, wojny, terroryzmu, awarii zasilania, przerw w
+dostępie do internetu lub awarii usług podmiotów trzecich.</p>
+
+<h3>8.4 Wyjątki</h3>
+<p>Żadne postanowienie niniejszego Regulaminu nie ogranicza ani nie wyłącza odpowiedzialności
+za:</p>
+<ul>
+    <li>Śmierć lub uszkodzenie ciała spowodowane zaniedbaniem</li>
+    <li>Oszustwo lub umyślne wprowadzenie w błąd</li>
+    <li>Jakąkolwiek odpowiedzialność, której nie można ograniczyć ani wyłączyć na mocy obowiązującego prawa</li>
+</ul>
+
+<hr />
+
+<h2>9. Rozwiązanie Umowy</h2>
+
+<h3>9.1 Rozwiązanie przez Klienta</h3>
+<p>Klient może rozwiązać swoje konto w dowolnym momencie, kontaktując się z nami pod adresem
+wskazanym w Sekcji 10. Rozwiązanie następuje po potwierdzeniu.</p>
+
+<h3>9.2 Rozwiązanie przez Dostawcę</h3>
+<p>Możemy rozwiązać lub zawiesić konto Klienta:</p>
+<ul>
+    <li>Ze skutkiem natychmiastowym, w przypadku istotnego naruszenia niniejszego Regulaminu (w tym naruszenia zasad Dopuszczalnego Użytkowania)</li>
+    <li>Z 30-dniowym pisemnym wypowiedzeniem, z dowolnego innego powodu</li>
+</ul>
+
+<h3>9.3 Skutki Rozwiązania</h3>
+<p>Po rozwiązaniu:</p>
+<ul>
+    <li>Wszystkie konta pracowników powiązane z firmą zostają dezaktywowane</li>
+    <li>Manager może zażądać eksportu danych w okresie 90 dni przechowywania (Sekcja 4.3)</li>
+    <li>Po upływie okresu przechowywania wszystkie dane zostają trwale usunięte</li>
+    <li>Wszelkie istniejące zobowiązania (w tym dotyczące poufności i ochrony danych) pozostają w mocy po rozwiązaniu</li>
+</ul>
+
+<h3>9.4 Dalsze Obowiązywanie</h3>
+<p>Sekcje, które ze swej natury powinny obowiązywać po rozwiązaniu, pozostają w mocy, w tym:
+Umowa Powierzenia Przetwarzania Danych (Sekcja 5), Ograniczenie Odpowiedzialności (Sekcja 8),
+Prawo Właściwe (Sekcja 10) oraz wszelkie nabyte zobowiązania.</p>
+
+<hr />
+
+<h2>10. Prawo Właściwe i Rozstrzyganie Sporów</h2>
+
+<h3>10.1 Prawo Właściwe</h3>
+<p>Niniejszy Regulamin podlega prawu Rzeczypospolitej Polskiej i jest zgodnie z nim
+interpretowany, bez względu na przepisy kolizyjne. W przypadku sprzeczności niniejszego
+Regulaminu z bezwzględnie obowiązującymi przepisami prawa UE dotyczącymi ochrony konsumentów
+lub ochrony danych, zastosowanie mają odpowiednie przepisy prawa UE.</p>
+
+<h3>10.2 Jurysdykcja</h3>
+<p>Wszelkie spory wynikające z niniejszego Regulaminu lub z nim związane podlegają wyłącznej
+jurysdykcji sądów w Warszawie, Polska.</p>
+
+<h3>10.3 Język</h3>
+<p>Niniejszy Regulamin jest dostępny w języku angielskim, polskim i ukraińskim. W przypadku
+jakichkolwiek rozbieżności między wersjami językowymi, wersja polska ma pierwszeństwo w
+zakresie interpretacji prawnej.</p>
+
+<h3>10.4 Kontakt</h3>
+<p>W przypadku pytań, żądań lub skarg dotyczących niniejszego Regulaminu lub Usługi:</p>
+<ul>
+    <li><strong>E-mail:</strong> <em>(do uzupełnienia)</em></li>
+    <li><strong>Adres korespondencyjny:</strong> <em>(do uzupełnienia)</em></li>
+</ul>
+
+<hr />
+
+<h2>11. Zmiany Regulaminu</h2>
+
+<p>Możemy aktualizować niniejszy Regulamin od czasu do czasu. W przypadku istotnych zmian
+powiadomimy Cię drogą e-mailową lub za pośrednictwem Usługi co najmniej 30 dni przed wejściem
+zmian w życie. Dalsze korzystanie z Usługi po dacie wejścia w życie zaktualizowanego Regulaminu
+oznacza akceptację zmian.</p>
+
+<p>Jeśli nie zgadzasz się ze zaktualizowanym Regulaminem, możesz rozwiązać swoje konto zgodnie z
+Sekcją 9.1.</p>
+
+<hr />
+
+<h2>12. Postanowienia Ogólne</h2>
+
+<h3>12.1 Całość Umowy</h3>
+<p>Niniejszy Regulamin, wraz z obowiązującą Polityką Prywatności i wszelkimi umowami
+uzupełniającymi, stanowi całość umowy między Tobą a BiznestOrg dotyczącej korzystania z
+Usługi.</p>
+
+<h3>12.2 Rozdzielność Postanowień</h3>
+<p>Jeżeli jakiekolwiek postanowienie niniejszego Regulaminu zostanie uznane za nieważne lub
+niewykonalne przez sąd właściwy, pozostałe postanowienia pozostają w pełni skuteczne.</p>
+
+<h3>12.3 Brak Zrzeczenia się Praw</h3>
+<p>Niewykonanie jakiegokolwiek postanowienia niniejszego Regulaminu nie stanowi zrzeczenia się tego
+postanowienia ani jakiegokolwiek innego postanowienia.</p>
+
+<h3>12.4 Cesja</h3>
+<p>Użytkownik nie może przenosić ani cedować swoich praw lub obowiązków wynikających z niniejszego
+Regulaminu bez naszej uprzedniej pisemnej zgody. Możemy przenieść nasze prawa i obowiązki na
+podmiot następczy w przypadku fuzji, przejęcia lub sprzedaży wszystkich lub zasadniczo wszystkich
+naszych aktywów.</p>
+
+<hr />
+
+<p><em>Niniejszy dokument jest dostarczany jako projekt i powinien zostać sprawdzony przez
+wykwalifikowanego prawnika przed publikacją. Nie stanowi porady prawnej. BiznestOrg zaleca
+uzyskanie niezależnej opinii prawnej w celu zapewnienia zgodności ze wszystkimi obowiązującymi
+przepisami prawa w danej jurysdykcji.</em></p>
+    </div>
+    <footer>© 2026 BEEZEE — EasyManagement Platform</footer>
+</body>
+</html>
