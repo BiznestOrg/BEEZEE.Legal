@@ -168,7 +168,7 @@
 </ul>
 <p><strong>1.1 Our role depends on whose data we process</strong></p>
 <ul>
-<li><strong>For employee data</strong> (shifts, breaks, tasks, photos, notifications, schedules, inventory requests of workers added to the platform by a Manager) — your <strong>employer (the Manager who created your account)</strong> is the <strong>data controller</strong>. We act as a <strong>data processor</strong> on the employer's behalf under Article 28 GDPR. The terms of that processing are set out in our Terms of Use (Section 5 — Data Processing Agreement). To exercise your rights regarding this data, contact your employer first; we will assist them in responding.</li>
+<li><strong>For employee data</strong> (shifts, breaks, tasks, photos, notifications, schedules, inventory requests of workers added to the platform by a Manager) — your <strong>employer (the Manager who created your account)</strong> is the <strong>data controller</strong>. We act as a <strong>data processor</strong> on the employer's behalf under Article 28 GDPR. The terms of that processing are set out in our Terms of Use (Section 5 — Data Processing Agreement). To exercise your rights regarding this data, contact your employer first; we will assist them in responding. Where your employer processes your data as the data controller, the legal bases applicable to that processing are determined by your employer and may include employment contract performance (Art. 6(1)(b)), legal obligation (Art. 6(1)(c)), or employment law provisions (Art. 9(2)(b) in conjunction with Art. 88 GDPR).</li>
 <li><strong>For Manager (account holder) data and platform-level data</strong> (account registration, billing-related data, security logs, aggregated platform statistics) — Ivan Melchenko and Andrei Rabeshka act as <strong>joint controllers</strong> under Article 26 GDPR.</li>
 </ul>
 <p><strong>1.2 Joint-controller arrangement (Art. 26 GDPR — essence)</strong></p>
@@ -250,8 +250,14 @@
 <td>Timestamps and user identifiers recording who created or last modified each record</td>
 <td>To maintain accountability and security</td>
 </tr>
+<tr>
+<td><strong>Server/technical logs</strong></td>
+<td>IP address, request timestamps, HTTP headers</td>
+<td>Security monitoring, abuse prevention, debugging</td>
+</tr>
 </tbody>
 </table>
+<p><em>Note: Aggregated statistics shown to Managers (e.g. shift summaries, task completion rates) are derived from the personal data listed above. The derivation step — computing aggregates from individual records — is itself a processing activity covered by this notice.</em></p>
 <hr />
 <h2>3. Why We Collect Your Data (Legal Basis)</h2>
 <p>Under the General Data Protection Regulation (GDPR), we process your personal data based on the
@@ -270,9 +276,10 @@ We rely on legitimate interest for the following processing activities, pursuing
 <li><strong>Push notifications</strong> — our and your employer's interest in timely operational communication so the Service can function as intended;</li>
 <li><strong>Task photos and task comments</strong> — your employer's interest in being able to verify completion of work and exchange operational feedback;</li>
 <li><strong>Aggregated statistics</strong> — your employer's interest in operational management of their business;</li>
-<li><strong>Security monitoring and abuse prevention</strong> — our interest in protecting the Service, our infrastructure and our users against fraud, abuse and unauthorised access.</li>
+<li><strong>Security monitoring and abuse prevention</strong> — our interest in protecting the Service, our infrastructure and our users against fraud, abuse and unauthorised access;</li>
+<li><strong>Server/technical logs</strong> — our interest in maintaining the security, availability and integrity of the infrastructure, and in detecting, diagnosing and preventing abuse and technical failures.</li>
 </ul>
-<p>We have carried out a balancing test for each of these interests and concluded that they are not overridden by your interests, rights and freedoms. You may object to processing based on legitimate interest at any time — see Section 7.</p>
+<p>We have carried out a balancing test for each of these interests and concluded that they are not overridden by your interests, rights and freedoms. The records of our balancing tests are available on request. You may object to processing based on legitimate interest at any time — see Section 7.</p>
 <p><strong>Consent (Article 6(1)(a))</strong>
 We do not currently rely on consent as a legal basis. If we ever ask for your consent for a specific processing activity, you will be able to withdraw it at any time, with effect for the future, without affecting the lawfulness of processing carried out before withdrawal (Article 7(3) GDPR).</p>
 <p><strong>Whether providing data is required</strong></p>
@@ -320,6 +327,7 @@ We do not currently rely on consent as a legal basis. If we ever ask for your co
 </tr>
 </tbody>
 </table>
+<p>Access to personal data within BEEZEE is limited to personnel who need it to provide or maintain the Service and is controlled by role-based access controls.</p>
 <p>We do not sell your personal data to any third party. We do not use any third-party analytics,
 advertising, or crash-reporting services.</p>
 <hr />
@@ -416,6 +424,11 @@ advertising, or crash-reporting services.</p>
 <td>Deleted when the parent record is deleted</td>
 </tr>
 <tr>
+<td><strong>Server/technical logs</strong></td>
+<td>90 days from collection</td>
+<td>Automatically purged after 90 days</td>
+</tr>
+<tr>
 <td><strong>Local device data</strong></td>
 <td>Until you log out or uninstall the app</td>
 <td>All local data is cleared automatically on logout</td>
@@ -428,6 +441,7 @@ advertising, or crash-reporting services.</p>
 </tbody>
 </table>
 <p>We keep your data only for as long as it is needed for the purposes described in this policy or as required by applicable law. The retention periods above are maximum periods — data may be deleted earlier where a deletion request can lawfully be honoured.</p>
+<p>Where data is included in platform backups, it will be removed from backups in the ordinary course of the backup retention cycle, which does not exceed 90 days. Upon account termination, data is soft-deleted within 7 days and permanently deleted from primary systems within 90 days, consistent with Section 4.3 of our Terms of Use. Data held in existing backups at the time of deletion will be removed as those backups expire, within the same 90-day maximum.</p>
 <hr />
 <h2>7. Your Rights</h2>
 <p>Under GDPR, you have the following rights regarding your personal data:</p>
@@ -446,6 +460,8 @@ You have the right to receive your personal data in a structured, commonly used,
 format. Contact us to request a data export.</p>
 <p><strong>Right to object (Article 21)</strong>
 You have the right to object, on grounds relating to your particular situation, to processing based on legitimate interest (such as audit logs, notifications, photos and aggregated statistics). Following an objection, we will cease the processing unless we can demonstrate compelling legitimate grounds which override your interests, rights and freedoms, or unless the processing is necessary for the establishment, exercise or defence of legal claims.</p>
+<p><strong>Right to object to direct marketing (Article 21(2))</strong>
+You have an unconditional right to object at any time to the processing of your personal data for direct marketing purposes, including any profiling carried out for direct marketing. This right is absolute — it cannot be balanced against our interests — and we will cease such processing immediately upon receipt of your objection. We do not currently carry out direct marketing, but this right applies immediately if we do so in the future.</p>
 <p><strong>Right to withdraw consent (Article 7(3))</strong>
 Where processing is based on your consent, you may withdraw that consent at any time with effect for the future. Withdrawal does not affect the lawfulness of processing carried out before withdrawal.</p>
 <p><strong>Right to lodge a complaint</strong>
@@ -454,7 +470,7 @@ complaint with the President of the Personal Data Protection Office (UODO — Ur
 Osobowych), ul. Stawki 2, 00-193 Warsaw, Poland, or with the supervisory authority in your
 country of residence.</p>
 <p><strong>How to exercise your rights:</strong>
-Contact us at <a href="mailto:biznest.platform@gmail.com">biznest.platform@gmail.com</a>. We will respond within 30 days of receiving your request.</p>
+Contact us at <a href="mailto:biznest.platform@gmail.com">biznest.platform@gmail.com</a>. We will respond within one month of receiving your request. In the case of complex or numerous requests, this period may be extended by a further two months; if so, we will notify you within one month of receiving your request and explain the reason for the extension (Art. 12(3) GDPR). To protect your privacy, we may need to verify your identity before fulfilling a request.</p>
 <hr />
 <h2>8. Security Measures</h2>
 <p>We implement appropriate technical and organisational measures designed to ensure a level of security appropriate to the risk, in line with Article 32 GDPR. These include in particular:</p>
@@ -476,13 +492,15 @@ Contact us at <a href="mailto:biznest.platform@gmail.com">biznest.platform@gmail
 <li>Secrets (credentials, signing keys, API keys) are stored in a dedicated managed secrets-management service, never in source code;</li>
 <li>Every record includes an audit trail of who created and last modified it;</li>
 <li>Stale device tokens are automatically cleaned up;</li>
-<li>Logging out clears local data, unregisters the push token and invalidates the server-side refresh token.</li>
+<li>Logging out clears local data, unregisters the push token and invalidates the server-side refresh token;</li>
+<li>We periodically review and test our security controls;</li>
+<li>We conduct periodic vulnerability assessments of our infrastructure.</li>
 </ul>
 <p><strong>Personal data breach notification</strong></p>
-<p>Where a personal data breach is likely to result in a high risk to your rights and freedoms, we will notify you without undue delay in accordance with Article 34 GDPR. Where we act as a processor on behalf of your employer, we will notify the employer (controller) without undue delay after becoming aware of a breach so that they can comply with their notification obligations.</p>
+<p>Where a personal data breach is likely to result in a high risk to your rights and freedoms, we will notify you without undue delay in accordance with Article 34 GDPR. Where we act as a processor on behalf of your employer, we will notify the employer (controller) without undue delay after becoming aware of a breach so that they can comply with their notification obligations. Where required by GDPR Article 33, we will notify the relevant supervisory authority (UODO) within 72 hours of becoming aware of a breach.</p>
 <hr />
 <h2>9. Local Storage on Your Device</h2>
-<p>The BEEZEE mobile app stores limited data locally on your device using secure device storage (not browser cookies). The push notification SDKs (Apple APNs, Google FCM) assign a device-level push token used solely to deliver notifications; we do not use any advertising identifiers, analytics SDKs, or third-party tracking technologies. Local storage covers, in particular: authentication tokens (to keep you logged in), basic profile and session information, the language setting, a short-lived cache of recently viewed content, and an offline action queue.</p>
+<p>The BEEZEE mobile app stores limited data locally on your device using secure device storage (not browser cookies). The push notification SDKs (Apple APNs, Google FCM) assign a device-level push token used solely to deliver notifications; we do not use any advertising identifiers, analytics SDKs, or third-party tracking technologies. Local storage covers, in particular: authentication tokens (to keep you logged in), basic profile and session information, the language setting, a short-lived cache of recently viewed content, and an offline action queue. The offline action queue is cleared on logout along with all other local data.</p>
 <p>All local data is cleared when you log out. You can disable push notifications at any time in your device's operating system settings.</p>
 <hr />
 <h2>10. Changes to This Policy</h2>
