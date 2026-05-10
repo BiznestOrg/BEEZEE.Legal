@@ -136,6 +136,11 @@
             <span class="doc-card-title" data-i18n="termsOfUse">Terms of Use</span>
             <span class="doc-card-arrow">→</span>
         </a>
+
+        <a class="doc-card" id="supportLink" href="support/en.html">
+            <span class="doc-card-title" data-i18n="support">Support</span>
+            <span class="doc-card-arrow">→</span>
+        </a>
     </div>
 
     <footer data-i18n="footer">© 2026 BEEZEE</footer>
@@ -147,6 +152,7 @@
                 langLabel: "Language:",
                 privacyPolicy: "Privacy Policy",
                 termsOfUse: "Terms of Use",
+                support: "Support",
                 footer: "© 2026 BEEZEE"
             },
             pl: {
@@ -154,6 +160,7 @@
                 langLabel: "Język:",
                 privacyPolicy: "Polityka prywatności",
                 termsOfUse: "Warunki użytkowania",
+                support: "Wsparcie",
                 footer: "© 2026 BEEZEE"
             },
             uk: {
@@ -161,6 +168,7 @@
                 langLabel: "Мова:",
                 privacyPolicy: "Політика конфіденційності",
                 termsOfUse: "Умови використання",
+                support: "Підтримка",
                 footer: "© 2026 BEEZEE"
             }
         };
@@ -168,6 +176,7 @@
         var langSelect = document.getElementById("langSelect");
         var privacyLink = document.getElementById("privacyLink");
         var termsLink = document.getElementById("termsLink");
+        var supportLink = document.getElementById("supportLink");
 
         function setLanguage(lang) {
             var t = translations[lang];
@@ -181,6 +190,7 @@
 
             privacyLink.href = "privacy-policy/" + lang + ".html";
             termsLink.href = "terms-of-use/" + lang + ".html";
+            supportLink.href = "support/" + lang + ".html";
 
             langSelect.value = lang;
 

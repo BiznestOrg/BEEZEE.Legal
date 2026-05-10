@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wsparcie — BEEZEE</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f8f9fa;
+            color: #1a1a2e;
+            line-height: 1.7;
+        }
+        .top-bar {
+            background: #fff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .top-bar .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #1a1a2e;
+            text-decoration: none;
+        }
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .lang-switcher a {
+            padding: 0.3rem 0.7rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #4b5563;
+            text-decoration: none;
+            border: 1px solid transparent;
+            transition: all 0.15s;
+        }
+        .lang-switcher a:hover {
+            background: #f3f4f6;
+            border-color: #e5e7eb;
+        }
+        .lang-switcher a.active {
+            background: #1a1a2e;
+            color: #fff;
+            border-color: #1a1a2e;
+        }
+        .content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.4rem;
+            color: #1a1a2e;
+        }
+        .lede {
+            color: #6b7280;
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 2.25rem;
+            margin-bottom: 0.8rem;
+            color: #1a1a2e;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .contact-card h2 {
+            margin-top: 0;
+        }
+        .email-button {
+            display: inline-block;
+            margin-top: 0.5rem;
+            background: #1a1a2e;
+            color: #fff;
+            padding: 0.7rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+        .email-button:hover {
+            background: #2d2d4a;
+            text-decoration: none;
+        }
+        ul {
+            margin: 0.5rem 0 1rem 1.5rem;
+            color: #374151;
+        }
+        li { margin-bottom: 0.5rem; }
+        .meta {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5e7eb;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        footer {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 0.8rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        @media (max-width: 640px) {
+            .content { padding: 1.5rem 1rem 3rem; }
+            h1 { font-size: 1.5rem; }
+            .top-bar { padding: 0.6rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-bar">
+        <a href="../index.html" class="logo">BEEZEE</a>
+        <div class="lang-switcher">
+            <a href="en.html">EN</a>
+            <a href="pl.html" class="active">PL</a>
+            <a href="uk.html">UK</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Wsparcie</h1>
+        <p class="lede">Potrzebujesz pomocy z BEEZEE? Jesteśmy małym zespołem i czytamy każdą wiadomość.</p>
+
+        <div class="contact-card">
+            <h2>Skontaktuj się</h2>
+            <p>Najszybszym sposobem jest kontakt przez e-mail. Staramy się odpowiadać w ciągu jednego dnia roboczego.</p>
+            <a class="email-button" href="mailto:biznest.platform@gmail.com">Napisz na biznest.platform@gmail.com</a>
+        </div>
+
+        <h2>Co warto dołączyć</h2>
+        <p>Aby pomóc nam szybciej rozwiązać problem, dołącz w razie potrzeby:</p>
+        <ul>
+            <li>Adres e-mail używany do logowania do BEEZEE</li>
+            <li>Twoją rolę (Menedżer lub Pracownik) i nazwę firmy</li>
+            <li>Urządzenie (iPhone lub Android) i wersję aplikacji (Ustawienia → O aplikacji)</li>
+            <li>Krótki opis tego, co się stało i czego się spodziewałeś</li>
+            <li>Zrzut ekranu, jeśli problem jest wizualny</li>
+        </ul>
+
+        <h2>Najczęstsze pytania</h2>
+        <ul>
+            <li><strong>Zakładanie konta firmowego.</strong> Nowe konta firmowe są tworzone na prośbę — napisz do nas, a pomożemy Ci zacząć.</li>
+            <li><strong>Dodawanie pracowników.</strong> Pracownicy nie rejestrują się samodzielnie. Menedżer zaprasza ich z poziomu aplikacji.</li>
+            <li><strong>Resetowanie hasła.</strong> Skorzystaj z opcji „Zapomniałem hasła" na ekranie logowania, aby otrzymać jednorazowy kod na e-mail.</li>
+            <li><strong>Usunięcie konta lub eksport danych.</strong> Wyślij nam prośbę e-mailem, a rozpatrzymy ją w terminach określonych w naszej Polityce prywatności.</li>
+        </ul>
+
+        <h2>Prywatność i kwestie prawne</h2>
+        <p>W sprawie pytań dotyczących prywatności, wniosków podmiotów danych na podstawie RODO lub kwestii związanych z naszymi Warunkami — skorzystaj z tego samego adresu e-mail. Jest to nasz jedyny punkt kontaktowy we wszystkich sprawach związanych z ochroną danych.</p>
+        <p>Możesz również zapoznać się z naszą <a href="../privacy-policy/pl.html">Polityką prywatności</a> i <a href="../terms-of-use/pl.html">Warunkami użytkowania</a>.</p>
+
+        <div class="meta">
+            <p>BEEZEE jest wspólnie prowadzone przez Ivana Melchenko i Andrija Rabeshkę, przedsiębiorców jednoosobowych zarejestrowanych w Polsce.</p>
+        </div>
+    </div>
+
+    <footer>© 2026 BEEZEE</footer>
+</body>
+</html>
